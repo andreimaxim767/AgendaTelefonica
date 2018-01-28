@@ -1,0 +1,64 @@
+-- MySQL dump 10.13  Distrib 5.6.12, for Win64 (x86_64)
+--
+-- Host: localhost    Database: contacts
+-- ------------------------------------------------------
+-- Server version	5.6.12-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `contacts`
+--
+
+/*!40000 DROP DATABASE IF EXISTS `contacts`*/;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `agenda` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `agenda`;
+
+--
+-- Table structure for table `contact`
+--
+
+DROP TABLE IF EXISTS `contact`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `contact` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `nume` varchar(50) NOT NULL COMMENT 'Nume ',
+  `prenume` varchar(50) NOT NULL COMMENT 'Prenume ',
+  `cnp` varchar(13) NOT NULL COMMENT 'CNP',
+  `telefon` varchar(20) NOT NULL COMMENT 'Numar Telefon',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact`
+--
+
+LOCK TABLES `contact` WRITE;
+/*!40000 ALTER TABLE `contact` DISABLE KEYS */;
+INSERT INTO `contact` VALUES (3,'Constantin','Georgescu','1680508698549','0247412134'),(40,'Liviu','Mihai','1870608340436','0758230577'),(43,'Marius','Anton','1850612320541','0723442412'),(45,'Constantin','Georgescu','1680508698547','0247412134'),(47,'Liviu','Mihai','1870608340437','0758230577'),(49,'Marius','Anton','1850612320541','0723442412'),(50,'Ion','Popescu','1870608340437','0744557785'),(53,'Marius','Anton','1850612320541','0723442412'),(55,'Constantin','Georgescu','1680508698547','0247412134'),(56,'Liviu','Mihai','1870608340437','0758230577'),(57,'Ion','Popescu','1870608340437','0744557785'),(58,'Constantin','Georgescu','1680508698547','0247412134'),(60,'Marius','Anton','1850612320541','0723442412'),(62,'Ion','Popescu','1870608340437','0744557785'),(64,'Liviu','Mihai','1870608340437','0758230577'),(65,'Dan','Ionescu','1780685427757','0757556887'),(67,'Dan','Ionescu','1780685427757','0757556887'),(68,'Dan','Ionescu','1780685427757','0757556887'),(69,'Dan','Ionescu','1780685427757','0757556887'),(70,'Constantin','Georgescu','1680508698547','0247412134'),(71,'Marius','Anton','1850612320541','0723442412');
+/*!40000 ALTER TABLE `contact` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-05-03 16:35:23
